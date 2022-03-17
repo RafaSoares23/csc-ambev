@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Editar Perfil</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- == FONT AWESOME == -->
+    <script src="https://kit.fontawesome.com/a6b263083b.js" crossorigin="anonymous"></script>
+    <!-- == ESTILO == -->
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+</head>
+<body>
+        <section class="editar-perfil">
+            <div class="menu-col">
+                <a href="entrou.html"><button class="voltar-log"><i class="fas fa-arrow-left"></i></button></a>
+                <div class="perfil">
+                    <div class="topo">        
+                        <div class="avatar-img" style="background-image:url('img/profile.jpg');"></div>
+                        <div class="nome">
+                            <h3>Maria da Silva</h3>
+                            <p>maria.d.silva@ambev.com.br</p>
+                        </div>
+                    </div>
+                    <ul class="editar-menu" data-menu>
+                        <li><a href="#"><i class="far fa-user"></i> Minha Conta</a></li>
+                        <li><a href="#"><i class="far fa-edit"></i> Editar Perfil</a></li>
+                    </ul>
+                    <div class="ajuda-box">
+                        <a href="ajuda.html">Precisa de Ajuda?</a>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="content-col"> -->
+                <div class="minha-conta ab" data-aba>
+                    <div class="grid">
+                            <button class="close" data-close><i class="fas fa-arrow-left"></i></button>
+                            <h1>Minha Conta</h1>
+                            <div class="conta-perfil">
+                                <img src="img/profile.jpg" alt="avatar" class="avatar" >
+                                <div class="nome">
+                                    <h3>Maria da Silva</h3>
+                                    <p>maria.d.silva@ambev.com.br</p>
+                                </div>
+                            </div>
+                            <img src="img/padrao-cor-menor.svg" alt="">
+                    </div>
+                </div>
+                <div class="box-editar ab" data-aba>
+                    <div class="grid">
+                            <button class="close" data-close><i class="fas fa-arrow-left"></i></button>
+                            <h1>Editar Perfil</h1>
+                            <div class="mudar-foto">
+                                <h4><i class="fas fa-camera"></i> Alterar foto</h4>
+                                <p>Adiciona ou troque a foto de perfil clicando em 'escolher uma novo foto'</p>
+                                <div class="flex-img">
+                                    <img src="img/profile.jpg" alt="" class="mudar-pic">
+                                    <a href="#" class="escolher">Escolher uma nova foto</a>
+                                    <a href="#"><button class="btn b-radius amarelo">Alterar foto</button></a>
+                                </div>
+                            </div>
+                            <div class="mudar-senha">
+                                <h4><i class="fas fa-lock"></i> Alterar senha</h4>
+                                <p>Para alterar sua senha, preencha os campos abaixo e clique no botão 'alterar senha'</p>
+                                <form id="change-pass">
+                                    <div class="flex-pass">
+                                        <input type="password" name="senha-atual" class="senha-velha" placeholder="Senha antiga">
+                                        <input type="password" name="senha-nova-a" class="senha-nova-a" placeholder="Nova senha">
+                                        <input type="password" name="senha-nova-b" class="senha-nova-b" placeholder="Confirmar senha">
+                                    </div>
+                                </form>
+                                <p class="subtxt">Mínimo de 8 caracteres, um número e uma letra maiúscula</p>
+                                <div class="flex-right">
+                                    <button class="btn b-radius amarelo">Alterar senha</button>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            <!-- </div> -->
+        </section>
+<script>
+            (() => {
+            const itens = document.querySelectorAll("[data-menu] li");
+            const abas = document.querySelectorAll("[data-aba]");
+            const close = document.querySelectorAll("[data-close]");
+
+            function clear() {
+            [...itens, ...abas].forEach((element) => {
+                if (element.classList.contains("ativo")) {
+                element.classList.remove("ativo");
+                }
+            });
+            }
+
+            function handleClick(index) {
+            clear();
+            // console.log(index);
+            const ativos = [itens[index], abas[index]];
+            // console.log(ativos);
+            ativos.forEach((element) => {
+                if (!element.classList.contains("ativo")) {
+                element.classList.add("ativo");
+                }
+            });
+            }
+
+            function windowResize(event) {
+                const width = event.target.innerWidth; 
+                if(width < 800) {
+                    if(!itens[0].classList.contains('ativo') && !abas[0].classList.contains('ativo')){
+                        itens[0].classList.add('ativo');
+                        abas[0].classList.add('ativo');
+                    }
+                } else {
+                    [itens[1], abas[1]].forEach(el => el.classList.remove('ativo'));
+                    [itens[0], abas[0]].forEach(element => element.classList.add('ativo'));
+                }
+            }   
+
+            function init() {
+                if(window.innerWidth >= 800) {
+                    clear();
+                    [itens[0], abas[0]].forEach(element => element.classList.add('ativo'));
+                }
+            }
+
+            itens.forEach((itens, index) => {
+            itens.addEventListener("click", (event) => {
+                event.preventDefault();
+                handleClick(index);
+            });
+            });
+
+            close.forEach((button) => {
+                button.addEventListener("click", clear);
+            });
+            
+            window.addEventListener('resize', windowResize);
+
+            init();
+        })();
+</script>
+</body>
+</html>

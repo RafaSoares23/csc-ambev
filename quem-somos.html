@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Quem Somos | CSC Ambev</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- == FONT AWESOME == -->
+    <script
+      src="https://kit.fontawesome.com/a6b263083b.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- == STYLE == -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/quem-somos.css"
+    />
+    <!-- == SWIPPER == -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <style>
+      #colaboradores {
+        backface-visibility: hidden;
+        animation: slideBg 18s linear infinite 4.5s;
+        animation-timing-function: ease-in-out;
+        background-image: url("../img/colaboradores.jpg");
+        z-index: -1;
+      }
+      @keyframes slideBg {
+        0% {
+          background-image: url('./img/colaboradores.jpg');
+        }
+        33% {
+          background-image: url('./img/colab2.jpg');
+        }
+        66% {
+          background-image: url('./img/colab3.jpg');
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="index.html">
+          <img src="img/logo-claro.svg" alt="CSC" class="logo" />
+        </a>
+
+        <!-- == BARRA DE USUÁRIO == -->
+        <div class="userbar">
+          <div class="usermenu">
+            <i class="fas fa-bars"></i>
+            <ul class="user-menu">
+              <li>Onde vamos?</li>
+              <li><a href="quem-somos.html">Quem Somos</a></li>
+              <li><a href="processos.html">Nossos Processos</a></li>
+              <li><a href="blog.html">Nosso Blog</a></li>
+              <li><a href="ajuda.html">Precisa de Ajuda?</a></li>
+            </ul>
+          </div>
+          <a href="editar-perfil.html" title="Editar Perfil">
+            <img src="img/profile.jpg" alt="Avatar" class="avatar" />
+          </a>
+          <div class="nome">
+            <a href="editar-perfil.html" title="Editar Perfil">
+              <h6>Maria da Silva</h6>
+              <p>maria.d.silva@ambev.com.br</p>
+            </a>
+          </div>
+          <div class="edit-p">
+            <i class="fas fa-angle-down"></i>
+            <ul class="edit-menu">
+              <li>
+                <a href="editar-perfil.html"
+                  ><i class="far fa-user"></i> Minha Conta</a
+                >
+              </li>
+              <li>
+                <a href="editar-perfil.html"
+                  ><i class="far fa-edit"></i> Editar Perfil</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="quem-somos">
+      <div class="swiper" id="sliderQuemSomos">
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide somos-csc">
+            <div class="conteudo">
+              <div class="image-qs animationFadeInUp">
+                <img src="img/csc-cinza.svg" alt="CSC Ambev" class="figura" />
+              </div>
+              <div class="texto animationFadeInDown">
+                <h1>Somos a CSC!</h1>
+                <h4>(Centro de Serviço Compartilhados e Cia)</h4>
+                <p>
+                  Iniciamos as atividades em Fevereiro de 2002, apenas alguns
+                  anos depois da criação da Ambev. Estamos localizados em
+                  Jaguariúna, SP e somos o sistema central da Cia.O CSC promove
+                  sinergia e eficiência para as áreas de negócio, um verdadeiro
+                  Centro de Soluções para a companhia que conta com 32
+                  cervejarias, 2 maltarias, mais de 100 centros de distribuição
+                  e de excelência, totalizandocerca de 35 mil colaboradores.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- SLIDE COLABORADORES DADOS -->
+          <div class="swiper-slide colab" data-dark id="colaboradores">
+            <div class="background">
+              <div class="conteudo">
+                <h1 class="animationFadeInUp" data-colab>
+                  Contamos com mais de <span>1.200</span> colaboradores.
+                </h1>
+                <h1 class="animationFadeInUp hidden" data-colab>
+                  <span>10 processos</span> diferentes.
+                </h1>
+                <h1 class="animationFadeInUp hidden" data-colab>
+                  prestamos serviços para toda a <span>América do Sul</span>.
+                </h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide sonhos">
+            <div class="conteudo">
+              <div class="texto animationFadeInLeft">
+                <h1>Nosso Sonho!</h1>
+                <h5>
+                  Ser o centro de conhecimento da Cia, alanvacado por pensamento
+                  crítico, autonomia e colaboração!
+                </h5>
+              </div>
+              <div class="image-qs">
+                <img
+                  src="img/sonho.png"
+                  alt="Sonhos"
+                  class="figura animationFadeInRight"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="swiper-slide parceiro"
+            data-dark
+            style="background-image: url('img/parceiros.png')"
+          >
+            <div class="conteudo fxcol">
+              <h1 class="animationFadeInDown">
+                Queremos ser o <span>melhor parceiro</span> das áreas e unidades
+                que necessitam de nossos serviços!
+              </h1>
+              <h5 class="animationFadeIn">
+                Para isso, nos baseamos em 4 pilares:
+              </h5>
+              <div class="flex-colors animationFadeInUp">
+                <div class="clrbox aqua">
+                  <h4>Transformação</h4>
+                </div>
+                <div class="clrbox laranja">
+                  <h4>Experiência</h4>
+                </div>
+                <div class="clrbox violeta">
+                  <h4>Gente</h4>
+                </div>
+                <div class="clrbox amar">
+                  <h4>Valor</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- SLIDER LIDERES -->
+          <div class="swiper-slide liderbg">
+            <div class="center">
+              <h1 class="animationFadeInDown">Nossos Líderes</h1>
+              <p class="animationFadeIn">
+                Para ajudar a Cia a evoluir, contamos com diversas áreas, aqui
+                no CSC essas áreas são chamadas de Macro Processos e seus
+                líderes são os gerentes de macro processo.
+              </p>
+
+              <div class="swiper" id="sliderGestores">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide profi">
+                    <div class="image">
+                      <img src="img/lider-a.jpg" alt="" />
+                    </div>
+                    <div class="content">
+                      <h4>Hayran Henrique Ferreira De Souza</h4>
+                      <p>MP de Execução & Serviços</p>
+                      <a href="lider-perfil.html"
+                        ><button class="lid-btn">
+                          Saiba mais <i class="fas fa-arrow-right"></i></button
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide profi">
+                    <div class="image">
+                      <img src="img/lider-b.png" alt="" />
+                    </div>
+                    <div class="content">
+                      <h4>Camila Teixeira Coelho de Felipo</h4>
+                      <p>Gerente de Macro Processo em Business Transformation</p>
+                      <a href="lider-perfil.html"
+                        ><button class="lid-btn">
+                          Saiba mais <i class="fas fa-arrow-right"></i></button
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide profi">
+                    <div class="image">
+                      <img src="img/lider-c.jpg" alt="" />
+                    </div>
+                    <div class="content">
+                      <h4>Hayran Henrique Ferreira De Souza</h4>
+                      <p>MP de Execução & Serviços</p>
+                      <a href="lider-perfil.html"
+                        ><button class="lid-btn">
+                          Saiba mais <i class="fas fa-arrow-right"></i></button
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="gestores-navigation">
+                <div class="gestores-prev">
+                  <i class="fas fa-arrow-left"></i>
+                </div>
+                <div class="gestores-next">
+                  <i class="fas fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- NOSSOS PROCESSOS -->
+          <div class="swiper-slide processo">
+            <div class="conteudo" data-prohome>
+              <div class="texto animationFadeInLeft">
+                <h1>Nosso Processos</h1>
+                <h5>
+                  Conheça mais dos nossos processos, clicando nos link
+                  disponíveis
+                </h5>
+                <div class="flex">
+                      <a href="#">
+                        <button class="btn b-radius branco">Service Now</button>
+                      </a>
+                      <a href="#">
+                        <button class="btn b-radius branco">Colabora</button>
+                      </a>
+                </div>
+              </div>
+              <div class="pro-btns animationFadeInLeft">
+                <a href="#juridico" data-ancora>
+                  <button class="cscbtn">
+                    Jurídico <i class="fas fa-arrow-right"></i>
+                  </button>
+                </a>
+                <a href="#logistica" data-ancora>
+                  <button class="cscbtn">
+                    Logistíca <i class="fas fa-arrow-right"></i>
+                  </button>
+                </a>
+                <a href="#gestao-gente" data-ancora>
+                  <button class="cscbtn">
+                    Gente & Gestão <i class="fas fa-arrow-right"></i>
+                  </button>
+                </a>
+                <a href="#financeiro-vendas" data-ancora>
+                  <button class="cscbtn">
+                    Financeiro Vendas <i class="fas fa-arrow-right"></i>
+                  </button>
+                </a>
+                <a href="#fiscal" data-ancora>
+                  <button class="cscbtn">
+                    Fiscal <i class="fas fa-arrow-right"></i>
+                  </button>
+                </a>
+                <a href="#compras-pagamentos" data-ancora>
+                  <button class="cscbtn">
+                    Compras & Pagamentos
+                    <i class="fas fa-arrow-right"></i>
+                  </button>
+                </a>
+                <a href="#gestao-gente" data-ancora>
+                  <button class="cscbtn">
+                    Gente & Gestão <i class="fas fa-arrow-right"></i>
+                  </button>
+                </a>
+                <a href="#financeiro-vendas" data-ancora>
+                  <button class="cscbtn">
+                    Financeiro Vendas <i class="fas fa-arrow-right"></i>
+                  </button>
+                </a>
+                <a href="#fiscal" data-ancora>
+                  <button class="cscbtn">
+                    Fiscal <i class="fas fa-arrow-right"></i>
+                  </button>
+                </a>
+                <a href="#compras-pagamentos" data-ancora>
+                  <button class="cscbtn">
+                    Compras & Pagamentos
+                    <i class="fas fa-arrow-right"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+
+            <!-- PROCESSOS JURIDICO -->
+            <div class="conteudo extra hidden" id="juridico">
+              <div class="texto animationFadeInRight">
+                <a href="#" class="voltar" data-return
+                  ><i class="fas fa-arrow-left"></i> Voltar ao menu</a
+                >
+                <h2>Jurídico</h2>
+                <h6>
+                  Lorem ipsum, lorem at dolun it, lorem ipsum, lorem at dolun it
+                </h6>
+                <div class="flex-p">
+                  <a href="processo-interna.html">
+                    <button class="btn b-radius amarelo arr">
+                      Acesse o sharepoint <i class="fas fa-arrow-right"></i>
+                    </button>
+                  </a>
+
+                  <a href="processo-interna.html">
+                    <button class="btn b-radius transp">Link numero 2</button>
+                  </a>
+                </div>
+              </div>
+              <div class="image-qs">
+                <img
+                  src="img/processo-imgs.png"
+                  alt="Financeiro e vendas"
+                  class="figura animationFadeInRight"
+                />
+              </div>
+            </div>
+
+            <!-- PROCESSOS LOGISTICA -->
+            <div class="conteudo extra hidden" id="logistica">
+              <div class="texto animationFadeInRight">
+                <a href="#" class="voltar" data-return
+                  ><i class="fas fa-arrow-left"></i> Voltar ao menu</a
+                >
+                <h2>Logistíca</h2>
+                <h6>
+                  Lorem ipsum, lorem at dolun it, lorem ipsum, lorem at dolun it
+                </h6>
+                <div class="flex-p">
+                  <a href="processo-interna.html">
+                    <button class="btn b-radius amarelo arr">
+                      Acesse o sharepoint <i class="fas fa-arrow-right"></i>
+                    </button>
+                  </a>
+
+                  <a href="processo-interna.html">
+                    <button class="btn b-radius transp">Link numero 2</button>
+                  </a>
+                </div>
+              </div>
+              <div class="image-qs">
+                <img
+                  src="img/processo-imgs.png"
+                  alt="Financeiro e vendas"
+                  class="figura animationFadeInRight"
+                />
+              </div>
+            </div>
+
+            <!-- PROCESSOS GESTÃO E GENTE -->
+            <div class="conteudo extra hidden" id="gestao-gente">
+              <div class="texto animationFadeInRight">
+                <a href="#" class="voltar" data-return
+                  ><i class="fas fa-arrow-left"></i> Voltar ao menu</a
+                >
+                <h2>Gestão & Gente</h2>
+                <h6>
+                  Lorem ipsum, lorem at dolun it, lorem ipsum, lorem at dolun it
+                </h6>
+                <div class="flex-p">
+                  <a href="processo-interna.html">
+                    <button class="btn b-radius amarelo arr">
+                      Acesse o sharepoint <i class="fas fa-arrow-right"></i>
+                    </button>
+                  </a>
+
+                  <a href="processo-interna.html">
+                    <button class="btn b-radius transp">Link numero 2</button>
+                  </a>
+                </div>
+              </div>
+              <div class="image-qs">
+                <img
+                  src="img/processo-imgs.png"
+                  alt="Financeiro e vendas"
+                  class="figura animationFadeInRight"
+                />
+              </div>
+            </div>
+
+            <!-- PROCESSOS FINANCEIRO E VENDAS -->
+            <div class="conteudo extra hidden" id="financeiro-vendas">
+              <div class="texto animationFadeInRight">
+                <a href="#" class="voltar" data-return
+                  ><i class="fas fa-arrow-left"></i> Voltar ao menu</a
+                >
+                <h2>Financeiro e vendas</h2>
+                <h6>
+                  Lorem ipsum, lorem at dolun it, lorem ipsum, lorem at dolun it
+                </h6>
+                <div class="flex-p">
+                  <a href="processo-interna.html">
+                    <button class="btn b-radius amarelo arr">
+                      Acesse o sharepoint <i class="fas fa-arrow-right"></i>
+                    </button>
+                  </a>
+                  <a href="processo-interna.html">
+                    <button class="btn b-radius transp">Link numero 2</button>
+                  </a>
+                </div>
+              </div>
+              <div class="image-qs">
+                <img
+                  src="img/processo-imgs.png"
+                  alt="Financeiro e vendas"
+                  class="figura animationFadeInRight"
+                />
+              </div>
+            </div>
+
+            <!-- PROCESSOS FISCAL -->
+            <div class="conteudo extra hidden" id="fiscal">
+              <div class="texto animationFadeInRight">
+                <a href="#" class="voltar" data-return
+                  ><i class="fas fa-arrow-left"></i> Voltar ao menu</a
+                >
+                <h2>Fiscal</h2>
+                <h6>
+                  Lorem ipsum, lorem at dolun it, lorem ipsum, lorem at dolun it
+                </h6>
+                <div class="flex-p">
+                  <a href="processo-interna.html">
+                    <button class="btn b-radius amarelo arr">
+                      Acesse o sharepoint <i class="fas fa-arrow-right"></i>
+                    </button>
+                  </a>
+
+                  <a href="processo-interna.html">
+                    <button class="btn b-radius transp">Link numero 4</button>
+                  </a>
+                </div>
+              </div>
+              <div class="image-qs">
+                <img
+                  src="img/processo-imgs.png"
+                  alt="Financeiro e vendas"
+                  class="figura animationFadeInRight"
+                />
+              </div>
+            </div>
+
+            <!-- PROCESSOS COMPRAS E PAGAMENTOS -->
+            <div class="conteudo extra hidden" id="compras-pagamentos">
+              <div class="texto animationFadeInRight">
+                <a href="#" class="voltar" data-return
+                  ><i class="fas fa-arrow-left"></i> Voltar ao menu</a
+                >
+                <h2>Compras e Pagamentos</h2>
+                <h6>
+                  Lorem ipsum, lorem at dolun it, lorem ipsum, lorem at dolun it
+                </h6>
+                <div class="flex-p">
+                  <a href="processo-interna.html">
+                    <button class="btn b-radius amarelo arr">
+                      Acesse o sharepoint <i class="fas fa-arrow-right"></i>
+                    </button>
+                  </a>
+
+                  <a href="processo-interna.html">
+                    <button class="btn b-radius transp">Link numero 4</button>
+                  </a>
+                </div>
+              </div>
+              <div class="image-qs">
+                <img
+                  src="img/processo-imgs.png"
+                  alt="Financeiro e vendas"
+                  class="figura animationFadeInRight"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- TOUR 360º AMBEV -->
+          <div
+            class="swiper-slide descubra"
+            data-dark
+            style="background-image: url('img/FotoAmbev3.jpg')"
+          >
+            <div class="conteudo fxcol">
+              <h1 class="animationFadeInDown">CSC Tour Virtual</h1>
+              <p class="animationFadeIn">
+                Proin lobortis aliquet lectus, eu commodo nisl. Morbi diam
+                ipsum, semper et risus sit amet, gravida cursus felis.
+              </p>
+              <div class="flex-bts animationFadeInUp">
+                <a href="tour360.html">
+                  <button class="btn b-radius amarelo">
+                    Acessar o Tour Virtual
+                  </button></a>
+                <!-- <a href="index.html"><button class="btn b-radius transp">
+                    Volta para o Início
+                  </button>
+                </a> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- DESCUBRA -->
+          <div
+            class="swiper-slide descubra"
+            data-dark
+            style="background-image: url('img/descubra.png')"
+          >
+            <div class="conteudo fxcol">
+              <h1 class="animationFadeInDown">Descubra o Portal</h1>
+              <p class="animationFadeIn">
+                Proin lobortis aliquet lectus, eu commodo nisl. Morbi diam
+                ipsum, semper et risus sit amet, gravida cursus felis.
+              </p>
+              <div class="flex-bts animationFadeInUp">
+                <a href="login.html"
+                  ><button class="btn b-radius amarelo">
+                    Ir para o Portal
+                  </button></a
+                >
+                <a href="index.html"
+                  ><button class="btn b-radius transp">
+                    Volta para o Início
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="quem-somos-prev"><i class="fas fa-arrow-left"></i></div>
+        <div class="quem-somos-next"><i class="fas fa-arrow-right"></i></div>
+      </div>
+    </section>
+    <script>
+      //selecoes
+      const dkBgElement = document.querySelectorAll("[data-dark]");
+      const userBar = document.querySelector(".userbar");
+      let activeSlide;
+
+      // botoes de processos
+      const processoBtns = document.querySelectorAll("[data-ancora]");
+      const processoHome = document.querySelector("[data-prohome]");
+      let anchor, voltar;
+
+      const abrirExtra = function (btn) {
+        btn.preventDefault();
+        anchor = document.querySelector(
+          btn.target.parentElement.getAttribute("href")
+        );
+        voltar = anchor.querySelector("[data-return]");
+
+        //trocar as classe que esconde o elemento
+        processoHome.classList.add("hidden");
+        anchor.classList.remove("hidden");
+
+        //Ativar botão de Voltar
+        voltar.addEventListener("click", function (voltar) {
+          console.log(voltar);
+          anchor.classList.add("hidden");
+          processoHome.classList.remove("hidden");
+        });
+      };
+
+      // Evento de mudança de Processos
+      processoBtns.forEach((btn) => {
+        btn.addEventListener("click", abrirExtra);
+      });
+
+      //Looping de Dados Colaboradores
+      const slideColab = document.querySelector(".colab");
+      const titleColabs = document.querySelectorAll("[data-colab]");
+      let i = 0;
+
+      // Looping dos Titulos
+      function titleChange(titles) {
+        if (i + 1 === titles.length) {
+          titles[titles.length - 1].classList.add("hidden");
+          titles[0].classList.remove("hidden");
+          i = 0;
+        } else {
+          titles[i].classList.add("hidden");
+          titles[i + 1].classList.remove("hidden");
+          i++;
+        }
+      }
+      //funcao de iniciar
+      function loopingDados() {
+        const looping = setInterval(() => {
+          titleChange(titleColabs);
+        }, 5000);
+      }
+
+      //iniciar loopingDados();
+      loopingDados();
+
+      //funcão de mudar cores da userbar
+      const colorCheck = function (activeSlide) {
+        // Tempo para fechar transicao
+        setTimeout((activeSlide) => {
+          // forEach - checar os data-dark
+          dkBgElement.forEach((el) => {
+            if (el.classList.contains("swiper-slide-active")) activeSlide = el;
+          });
+          //testar se o activeSlide é valido e mudar a clase
+          activeSlide
+            ? userBar.classList.add("light")
+            : userBar.classList.remove("light");
+        }, 980);
+      };
+
+      // console.log(dkBgElement);
+      const optsSwiper = {
+        // Optional parameters
+        direction: "horizontal",
+        // Navigation arrows
+        mousewheel: true,
+        navigation: {
+          nextEl: ".quem-somos-next",
+          prevEl: ".quem-somos-prev",
+        },
+        allowTouchMove: false,
+        effect: "fade",
+        fadeEffect: {
+          crossFade: true,
+        },
+        speed: 900,
+        on: {
+          //chama o evento de checar as cores
+          slideChange: function () {
+            colorCheck(activeSlide);
+          },
+        },
+      };
+
+      // Slider 1 Quem Somos
+      const swiper = new Swiper("#sliderQuemSomos", optsSwiper);
+
+      // Slider 2 Gestores
+      const swiperProfissionais = new Swiper("#sliderGestores", {
+        navigation: {
+          nextEl: ".gestores-next",
+          prevEl: ".gestores-prev",
+        },
+        slidesPerView: 2,
+        spaceBetween: 10,
+        loop: true,
+        centeredSlides: true,
+        breakpoints: {
+          650: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

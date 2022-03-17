@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>CSC Ambev | Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- == FONT AWESOME == -->
+    <script
+      src="https://kit.fontawesome.com/a6b263083b.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- == STYLE == -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/josedasilva123/basicv2@main/public/basic.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/blog.css"
+    />
+    <!-- == SWIPPER == -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- == HEADER == -->
+    <header>
+      <div class="container">
+        <a href="index.html">
+          <img src="img/csc-cores.svg" alt="CSC" class="logo" />
+        </a>
+        <!-- == BARRA DE USUÁRIO == -->
+        <div class="userbar">
+          <div class="usermenu">
+            <i class="fas fa-bars"></i>
+            <ul class="user-menu">
+              <li>Onde vamos?</li>
+              <li><a href="quem-somos.html">Quem Somos</a></li>
+              <li><a href="processos.html">Nossos Processos</a></li>
+              <li><a href="blog.html">Nosso Blog</a></li>
+              <li><a href="ajuda.html">Precisa de Ajuda?</a></li>
+            </ul>
+          </div>
+          <a href="editar-perfil.html" title="Editar Perfil">
+            <img src="img/profile.jpg" alt="Avatar" class="avatar" />
+          </a>
+          <div class="nome">
+            <a href="editar-perfil.html" title="Editar Perfil">
+              <h6>Maria da Silva</h6>
+              <p>maria.d.silva@ambev.com.br</p>
+            </a>
+          </div>
+          <div class="edit-p">
+            <i class="fas fa-angle-down"></i>
+            <ul class="edit-menu">
+              <li>
+                <a href="editar-perfil.html"
+                  ><i class="far fa-user"></i> Minha Conta</a
+                >
+              </li>
+              <li>
+                <a href="editar-perfil.html"
+                  ><i class="far fa-edit"></i> Editar Perfil</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- == BARRA MENU == -->
+    <section class="bar-amarela">
+      <div class="amarelo">
+        <div class="menubx">
+          <nav>
+            <div class="b-menu-toggle-box">
+              <div class="b-mobile" data-toggle="exemplo">
+                <i class="fas fa-bars"></i>
+              </div>
+            </div>
+            <ul class="b-menu" data-element="exemplo" data-outclick>
+              <li><a href="blog.html">Início</a></li>
+              <li><a href="categoria-blog.html">#Tema1</a></li>
+              <li><a href="categoria-blog.html">#Tema2</a></li>
+              <li><a href="categoria-blog.html">#Tema3</a></li>
+              <li><a href="categoria-blog.html">#Tema4</a></li>
+              <li><a href="categoria-blog.html">#Tema5</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="blogbar">
+        <div class="container">
+          <h1>Você não pode perder!</h1>
+          <img src="img/padrao-cor-menor.svg" alt="Padrão cores blog" />
+        </div>
+      </div>
+    </section>
+
+    <!-- DESTAQUE CONTEUDOS -->
+    <section class="conteudos-top">
+      <div class="flexdest">
+        <!-- post 1 -->
+        <article class="post">
+          <div class="postimg">
+            <a href="blog-interno.html">
+              <img src="img/destaque-principal.png" alt="" />
+            </a>
+          </div>
+          <div class="posttit">
+            <h4>Um artigo interessante sobre determinado assunto</h4>
+            <span><i class="far fa-heart"></i>121</span>
+            <a href="blog-interno.html">Leia mais</a>
+          </div>
+        </article>
+        <!-- post 2 -->
+        <article class="post">
+          <div class="postimg">
+            <a href="blog-interno.html">
+              <img src="img/destaque-b.png" alt="" />
+            </a>
+          </div>
+          <div class="posttit">
+            <h4>Um artigo interessante sobre determinado assunto</h4>
+            <span><i class="far fa-heart"></i> 12</span>
+            <a href="blog-interno.html">Ler mais</a>
+          </div>
+        </article>
+        <!-- post 3 -->
+        <article class="post">
+          <div class="postimg">
+            <a href="blog-interno.html">
+              <img src="img/destaque-c.png" alt="" />
+            </a>
+          </div>
+          <div class="posttit">
+            <h4>Um artigo interessante sobre determinado assunto</h4>
+            <span><i class="far fa-heart"></i> 11</span>
+            <a href="blog-interno.html">Ler mais</a>
+          </div>
+        </article>
+        <!-- post 4 -->
+        <article class="post">
+          <div class="postimg">
+            <a href="blog-interno.html">
+              <img src="img/destaque-a.png" alt="" />
+            </a>
+          </div>
+          <div class="posttit">
+            <h4>Um artigo interessante sobre determinado assunto</h4>
+            <span><i class="far fa-heart"></i> 14</span>
+            <a href="blog-interno.html">Ler mais</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- TEMAS DO BLOG -->
+    <section class="temas-blog">
+      <div class="container flextemas">
+        <div class="temas yellow">
+          <div class="tit-tm">
+            <h3>Tema1</h3>
+          </div>
+          <div class="post-thumb">
+            <div class="img-thumb">
+              <a href="blog-interno.html">
+                <img src="img/post-a.png" alt="" />
+              </a>
+            </div>
+            <div class="tit-post">
+              <h4>Um artigo interessante sobre determinado assunto</h4>
+              <a href="blog-interno.html">Leia mais</a>
+            </div>
+          </div>
+          <div class="post-thumb">
+            <div class="img-thumb">
+              <a href="blog-interno.html">
+                <img src="img/post-a.png" alt="" />
+              </a>
+            </div>
+            <div class="tit-post">
+              <h4>Um artigo interessante sobre determinado assunto</h4>
+              <a href="blog-interno.html">Leia mais</a>
+            </div>
+          </div>
+          <div class="post-thumb">
+            <div class="img-thumb">
+              <a href="blog-interno.html">
+                <img src="img/post-a.png" alt="" />
+              </a>
+            </div>
+            <div class="tit-post">
+              <h4>Um artigo interessante sobre determinado assunto</h4>
+              <a href="blog-interno.html">Leia mais</a>
+            </div>
+          </div>
+        </div>
+        <div class="temas blue">
+          <div class="tit-tm">
+            <h3>Tema2</h3>
+          </div>
+          <div class="post-thumb">
+            <div class="img-thumb">
+              <a href="blog-interno.html">
+                <img src="img/post-a.png" alt="" />
+              </a>
+            </div>
+            <div class="tit-post">
+              <h4>Um artigo interessante sobre determinado assunto</h4>
+              <a href="blog-interno.html">Leia mais</a>
+            </div>
+          </div>
+          <div class="post-thumb">
+            <div class="img-thumb">
+              <a href="blog-interno.html">
+                <img src="img/post-a.png" alt="" />
+              </a>
+            </div>
+            <div class="tit-post">
+              <h4>Um artigo interessante sobre determinado assunto</h4>
+              <a href="blog-interno.html">Leia mais</a>
+            </div>
+          </div>
+          <div class="post-thumb">
+            <div class="img-thumb">
+              <a href="blog-interno.html">
+                <img src="img/post-a.png" alt="" />
+              </a>
+            </div>
+            <div class="tit-post">
+              <h4>Um artigo interessante sobre determinado assunto</h4>
+              <a href="blog-interno.html">Leia mais</a>
+            </div>
+          </div>
+        </div>
+        <div class="temas orange">
+          <div class="tit-tm">
+            <h3>Tema3</h3>
+          </div>
+          <div class="post-thumb">
+            <div class="img-thumb">
+              <a href="blog-interno.html">
+                <img src="img/post-a.png" alt="" />
+              </a>
+            </div>
+            <div class="tit-post">
+              <h4>Um artigo interessante sobre determinado assunto</h4>
+              <a href="blog-interno.html">Leia mais</a>
+            </div>
+          </div>
+          <div class="post-thumb">
+            <div class="img-thumb">
+              <a href="blog-interno.html">
+                <img src="img/post-a.png" alt="" />
+              </a>
+            </div>
+            <div class="tit-post">
+              <h4>Um artigo interessante sobre determinado assunto</h4>
+              <a href="blog-interno.html">Leia mais</a>
+            </div>
+          </div>
+          <div class="post-thumb">
+            <div class="img-thumb">
+              <a href="blog-interno.html">
+                <img src="img/post-a.png" alt="" />
+              </a>
+            </div>
+            <div class="tit-post">
+              <h4>Um artigo interessante sobre determinado assunto</h4>
+              <a href="blog-interno.html">Leia mais</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AUTORES DO BLOG -->
+    <section class="autores">
+      <div class="container">
+        <h2>Os principais Autores</h2>
+        <div class="scrollbx" aut-scroll>
+          <div class="autflex">
+            <div class="aut">
+              <a href="categoria-blog.html">
+                <img src="img/autor-1.jpg" alt="" />
+                <h4>Maria Joaquina</h4>
+              </a>
+            </div>
+            <div class="aut">
+              <a href="categoria-blog.html">
+                <img src="img/autor-2.jpg" alt="" />
+                <h4>Branda Kasisnki</h4>
+              </a>
+            </div>
+            <div class="aut">
+              <a href="categoria-blog.html">
+                <img src="img/autor-3.jpg" alt="" />
+                <h4>Julia de Souza</h4>
+              </a>
+            </div>
+            <div class="aut">
+              <a href="categoria-blog.html">
+                <img src="img/autor-1.jpg" alt="" />
+                <h4>Maria Joaquina</h4>
+              </a>
+            </div>
+            <div class="aut">
+              <a href="categoria-blog.html">
+                <img src="img/autor-2.jpg" alt="" />
+                <h4>Branda Kasisnki</h4>
+              </a>
+            </div>
+            <div class="aut">
+              <a href="categoria-blog.html">
+                <img src="img/autor-3.jpg" alt="" />
+                <h4>Julia de Souza</h4>
+              </a>
+            </div>
+            <div class="aut">
+              <a href="categoria-blog.html">
+                <img src="img/autor-1.jpg" alt="" />
+                <h4>Maria Joaquina</h4>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="aut-padrao-cores"></div>
+      </div>
+    </section>
+
+    <section class="descubra">
+      <div class="container">
+        <h3>descubra</h3>
+        <div class="flex-desc">
+          <div
+            class="thumb-medio"
+            style="background-image: url('img/young-afro.jpg')"
+          >
+            <div class="content">
+              <h4>Um artigo interessante sobre determinado assunto</h4>
+              <a href="blog-interno.html">Ler mais</a>
+            </div>
+          </div>
+          <div class="flxcol">
+            <div
+              class="thumb-pqn"
+              style="background-image: url('img/people-blog.jpg')"
+            >
+              <div class="content">
+                <h4>Um artigo interessante sobre determinado assunto</h4>
+                <a href="blog-interno.html">Ler mais</a>
+              </div>
+            </div>
+            <div
+              class="thumb-pqn"
+              style="background-image: url('img/blog-people-2.jpg')"
+            >
+              <div class="content">
+                <h4>Um artigo interessante sobre determinado assunto</h4>
+                <a href="blog-interno.html">Ler mais</a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="thumb-medio"
+            style="background-image: url('img/teamwork.jpg')"
+          >
+            <div class="content">
+              <h4>Um artigo interessante sobre determinado assunto</h4>
+              <a href="blog-interno.html">Ler mais</a>
+            </div>
+          </div>
+
+          <div
+            class="thumb-medio"
+            style="background-image: url('img/people-blog.jpg')"
+          >
+            <div class="content">
+              <h4>Um artigo interessante sobre determinado assunto</h4>
+              <a href="blog-interno.html">Ler mais</a>
+            </div>
+          </div>
+
+          <div class="flxcol">
+            <div
+              class="thumb-pqn"
+              style="background-image: url('img/blog-people-2.jpg')"
+            >
+              <div class="content">
+                <h4>Um artigo interessante sobre determinado assunto</h4>
+                <a href="blog-interno.html">Ler mais</a>
+              </div>
+            </div>
+            <div
+              class="thumb-pqn"
+              style="background-image: url('img/people-blog.jpg')"
+            >
+              <div class="content">
+                <h4>Um artigo interessante sobre determinado assunto</h4>
+                <a href="blog-interno.html">Ler mais</a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="thumb-medio"
+            style="background-image: url('img/young-afro.jpg')"
+          >
+            <div class="content">
+              <h4>Um artigo interessante sobre determinado assunto</h4>
+              <a href="blog-interno.html">Ler mais</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/gh/josedasilva123/basicv2@main/public/basic.js"
+    ></script>
+    <script>
+      (() => {
+        const scrollAutor = document.querySelector("[aut-scroll]");
+        scrollAutor.addEventListener("wheel", (ev) => {
+          ev.preventDefault();
+          scrollAutor.scrollLeft += ev.deltaY;
+        });
+      })();
+    </script>
+  </body>
+</html>

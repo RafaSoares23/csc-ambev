@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Cadastro</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- == FONT AWESOME == -->
+    <script src="https://kit.fontawesome.com/a6b263083b.js" crossorigin="anonymous"></script>
+    <!-- == ESTILO == -->
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+</head>
+<body>
+        <section class="cadastro">
+                <div class="cad-form">
+                    <div class="white-overlay"></div>
+                    <a href="index.html">
+                        <button class="btn volt">
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                    </a>
+                    <div class="form-content">
+                        <img src="img/csc-cores.svg" class="logo" alt="CSC Ambev">
+                        <h1>Cadastre-se</h1>
+                        <div id="cadastro"><!-- <<<---- div.cadastro MUDAR PARA FORM  -->
+                            <label>
+                                <input type="text" name="nome" class="cad" placeholder="Seu nome" >
+                            </label>
+                            <label>
+                                <input type="email" name="email" class="cad" placeholder="Seu e-mail" >
+                            </label>
+                            <label>
+                                <i class="far fa-eye" data-eye></i>
+                                <input type="password" name="senha" class="cad" placeholder="Crie uma senha" data-input>
+                                <p>Mínimo de 8 caracteres, um número e uma letra maiúscula</p>
+                            </label>
+                            <label>
+                                <i class="far fa-eye" data-eye></i>
+                                <input type="password" name="confirmar" class="cad" placeholder="Confirmar sua senha" data-input>
+                            </label>
+                            <a class="flex-right">
+                                    <a href="cadastro-sucesso.html"><button class="btn cadastrar amarelo" onclick="window.location.href = '/cadastro-sucesso.html'">Cadastre-se</button></a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="cad-img"></div>
+        </section>
+        <script>
+            const iconsEye = document.querySelectorAll('[data-eye]');
+            const inputPassList = document.querySelectorAll('[data-input]');
+            let passHide = true;
+            
+            //função
+            const chengeInputs = function(inputType, iconOut, iconIn) {
+                inputPassList[0].setAttribute('type', `${inputType}`);
+                inputPassList[1].setAttribute('type', `${inputType}`);
+                iconsEye[0].classList.replace(`${iconOut}`, `${iconIn}`);
+                iconsEye[1].classList.replace(`${iconOut}`, `${iconIn}`);
+                passHide = !passHide;
+            }
+
+            iconsEye.forEach(icon => {
+                icon.addEventListener("click", function() {
+                    if(passHide) {
+                        chengeInputs('text', 'fa-eye', 'fa-eye-slash');
+                    } else {
+                        chengeInputs('password', 'fa-eye-slash', 'fa-eye');
+                    }
+                })
+            });
+
+        </script>
+</body>
+</html>

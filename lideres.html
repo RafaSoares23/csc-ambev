@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Quem Somos | CSC Ambev</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- == FONT AWESOME == -->
+        <script
+        src="https://kit.fontawesome.com/a6b263083b.js"
+        crossorigin="anonymous"
+      ></script>
+      <!-- == STYLE == -->
+      <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+      />
+      <link
+        rel="stylesheet"
+        type="text/css"
+        media="screen"
+        href="css/quem-somos.css"
+      />
+      <!-- == SWIPPER == -->
+      <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+      <style>
+          /* == ANIMATION == */
+            .swiper-slide-active .animationFadeIn {
+            animation: fadeIn 1.4s forwards;
+            }
+            .swiper-slide-active .animationFadeInUp {
+            animation: fadeInUp 1.2s forwards;
+            }
+            .swiper-slide-active .animationFadeInDown {
+            animation: fadeInDown 1.2s forwards;
+            }
+            .swiper-slide-active .animationFadeInRight {
+            animation: fadeInRight 1.5s forwards;
+            }
+            .swiper-slide-active .animationFadeInLeft {
+            animation: fadeInLeft 1.5s forwards;
+            }
+        section.lideres-page {
+            height: 100vh;
+        }
+        section.lideres-page .lideres-bg {
+            background: #31b54a url('img/padrao-claro.svg') no-repeat bottom left;
+            background-size: 30%;
+            flex-shrink: 0;
+            width: 100%;
+            height: 100vh;
+            position: relative;
+          }
+          .lideres-bg .center > * {
+            color: white;
+            text-align: center;
+          }
+        .lideres-bg .center {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 80px 0px;
+            box-sizing: border-box;
+            height: 100vh;
+            width: 100%;
+        }
+        .lideres-bg .center p {
+            font-size: 16px;
+            line-height: 30px;
+            margin: 10px 0;
+            max-width: 650px;
+        }
+        .lideres-bg .center h1 {
+            font-size: 64px;
+            line-height: 84px;
+            font-weight: 700;
+            animation: fadeInUp 0.9s forwards;
+            margin: 20px 0;
+        }
+        /* SWIPER LIDERES */
+        #sliderGestores2 {
+        max-width: 1024px;
+        width: 100%;
+        }
+
+        #sliderGestores2 .profi .image img {
+        max-width: 280px;
+        height: auto;
+        border-radius: 50%;
+        }
+
+        #sliderGestores2 .profi {
+        opacity: 0.5;
+        transition: 0.3s;
+        }
+        #sliderGestores2 .profi .content {
+        opacity: 0;
+        /* animation: fadeInDown 0.5s; */
+        }
+        #sliderGestores2 .profi:hover {
+        opacity: 1;
+        }
+        #sliderGestores2 .profi.swiper-slide-active {
+        opacity: 1;
+        }
+        #sliderGestores2 .profi.swiper-slide-active .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 1;
+        animation: fadeInUp 0.6s forwards;
+        }
+        #sliderGestores2 .profi .image img {
+                max-width: 175px;
+        }
+        #sliderGestores2 .profi .image img {
+            max-width: 280px;
+            height: auto;
+            border-radius: 50%;
+        }
+        #sliderGestores2 .profi .content h4 {
+            font-size: 21px;
+            line-height: 28px;
+            margin: 5px 0;
+        }
+        #sliderGestores2 .profi .content p {
+            font-size: 18px;
+            line-height: 28px;
+            max-width: 100%;
+            margin: 5px 0 15px;
+        }
+        #sliderGestores2 .profi .content a {
+            cursor: pointer;
+        }
+        #sliderGestores2 .profi .content button.lid-btn {
+            border: none;
+            padding: 10px 2px 10px 30px;
+            border-radius: 40px;
+            background-color: #42c6c6;
+            font-family: var(--fnt);
+            font-size: 16px;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all ease-in-out 0.3s;
+        }
+        #sliderGestores2 .profi .content .lid-btn .fas {
+            background-color: white;
+            color: #42c6c6;
+            padding: 5px;
+            border-radius: 15px;
+            margin: 0 8px 0 8px;
+        }
+        #sliderGestores2 .profi {
+            opacity: 0.5;
+            transition: 0.3s;
+        }
+        #sliderGestores2 .profi .content {
+            opacity: 0;
+        }
+        #sliderGestores2 .profi.swiper-slide-active .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 1;
+            animation: fadeInUp 0.6s forwards;
+        }
+        @media only screen and (max-width: 1370px) {
+            .lideres-bg .center h1 {
+                font-size: 50px;
+                line-height: 54px;
+                margin: 0;
+            }
+            #sliderGestores2 .profi .image {
+                height: 180px;
+            }
+            #sliderGestores2 .profi .image img {
+                max-width: 175px;
+            }
+            #sliderGestores2 {
+                max-width: 950px;
+            }
+            .center .gestores-navigation {
+                width: 65vw;
+            }
+        }
+        @media only screen and (max-width: 996px) {
+            .lideres-bg .center {
+                margin: 0;
+            }
+            .lideres-bg .center h1 {
+                margin: 0 0 20px;
+            }
+            #sliderGestores2 .profi .image {
+                height: 150px;
+            }
+            #sliderGestores2 .profi .image img {
+                max-width: 150px;
+            }
+            #sliderGestores2 .profi .content h4 {
+                font-size: 18px;
+                line-height: 20px;
+                margin: 2px 0;
+            }
+            #sliderGestores2 .profi .content p {
+                font-size: 14px;
+                line-height: 16px;
+                max-width: 100%;
+                margin: 5px 0 8px;
+            }
+            #sliderGestores2 .profi .content button.lid-btn {
+                padding: 6px 0px 6px 25px;
+                font-size: 13px;
+            }
+        }
+        @media only screen and (max-width: 790px) {
+            .lideres-bg .center {
+                margin: 0;
+            }
+        }
+        @media only screen and (max-width: 768px) {
+            .lideres-bg .center p {
+                font-size: 14px;
+                line-height: 26px;
+                margin: 5px 0 20px;
+            }
+            #sliderGestores2 .profi .image {
+                height: 200px;
+            }
+            #sliderGestores2 .profi .image img {
+                max-width: 200px;
+            }
+        }
+        @media only screen and (max-width: 500px) {
+            .lideres-bg .center h1 {
+                font-size: 38px;
+                line-height: 30px;
+            }
+            .lideres-bg .center p {
+                font-size: 13px;
+                line-height: 22px;
+                margin: 5px 0 20px;
+            }
+            #sliderGestores2 .profi .image {
+                height: 180px;
+            }
+            #sliderGestores2 .profi .image img {
+                max-width: 170px;
+            }
+            .center .gestores-navigation {
+                width: 80vw;
+            }
+        }
+        /* /// LIDERES SLIDER RESPOSIVO /// */
+        @media only screen and (max-height: 830px) {
+        .lideres-bg .center h1 {
+            font-size: 42px;
+            line-height: 22px;
+        }
+
+        #sliderGestores2 .profi .image {
+            height: 25vh;
+        }
+
+        #sliderGestores2 .profi .image img {
+            max-width: 24vh;
+        }
+        }
+        @media only screen and (max-height: 650px) {
+        .liderbg .center h1 {
+            font-size: 30px;
+            line-height: 1;
+            margin: 0 0 10px;
+        }
+        #sliderGestores2 .profi .content h4 {
+            font-size: 18px;
+            line-height: 1.2;
+            margin: 0;
+        }
+        #sliderGestores2 .profi .content p {
+            font-size: 14px;
+            line-height: 1.2;
+            margin: 0 0 10px;
+        }
+        #sliderGestores2 .profi .image {
+            height: 20.5vh;
+        }
+        #sliderGestores2 .profi .image img {
+            max-width: 20vh;
+        }
+        #sliderGestores2 .profi .content button.lid-btn {
+            margin:-10px 0 0;
+            transform: scale(0.7);
+        }
+        }
+      </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="index.html">
+          <img src="img/logo-claro.svg" alt="CSC" class="logo" />
+        </a>
+        <!-- == BARRA DE USUÁRIO == -->
+        <div class="userbar">
+          <div class="usermenu">
+            <i class="fas fa-bars"></i>
+            <ul class="user-menu">
+              <li>Onde vamos?</li>
+              <li><a href="quem-somos.html">Quem somos</a></li>
+              <li><a href="processos.html">Nossos processos</a></li>
+              <li><a href="blog.html">Nosso blog</a></li>
+              <li><a href="ajuda.html">Precisa de ajuda?</a></li>
+            </ul>
+          </div>
+          <a href="editar-perfil.html" title="Editar Perfil">
+              <img src="img/profile.jpg" alt="Avatar" class="avatar" />
+          </a>
+          <div class="nome">
+            <a href="editar-perfil.html" title="Editar Perfil">
+                <h6>Maria da Silva</h6>
+                <p>maria.d.silva@ambev.com.br</p>
+            </a>
+          </div>
+          <div class="edit-p">
+            <i class="fas fa-angle-down"></i>
+            <ul class="edit-menu">
+              <li>
+                <a href="editar-perfil.html"
+                  ><i class="far fa-user"></i> Minha Conta</a
+                >
+              </li>
+              <li>
+                <a href="editar-perfil.html"
+                  ><i class="far fa-edit"></i> Editar Perfil</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+</header>
+<section class="lideres-page">
+    <div class="swiper-slide lideres-bg">
+        <div class="center">
+          <h1 class="animationFadeInDown">Nossos Líderes</h1>
+          <p class="animationFadeIn">
+            Para ajudar a Cia a evoluir, contamos com diversas áreas, aqui
+            no CSC essas áreas são chamadas de Macro Processos e seus
+            líderes são os gerentes de macro processo.
+          </p>
+
+          <div class="swiper" id="sliderGestores2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide profi">
+                <div class="image">
+                  <img src="img/lider-a.jpg" alt="" />
+                </div>
+                <div class="content">
+                  <h4>Hayran Henrique Ferreira De Souza</h4>
+                  <p>MP de Execução & Serviços</p>
+                  <a href="lider-perfil.html"
+                    ><button class="lid-btn">
+                      Saiba mais <i class="fas fa-arrow-right"></i></button
+                  ></a>
+                </div>
+              </div>
+              <div class="swiper-slide profi">
+                <div class="image">
+                  <img src="img/lider-b.png" alt="" />
+                </div>
+                <div class="content">
+                  <h4>Camila Teixeira Coelho de Felipo</h4>
+                  <p>Gerente de Macro Processo em Business Transformation</p>
+                  <a href="lider-perfil.html"
+                    ><button class="lid-btn">
+                      Saiba mais <i class="fas fa-arrow-right"></i></button
+                  ></a>
+                </div>
+              </div>
+              <div class="swiper-slide profi">
+                <div class="image">
+                  <img src="img/lider-c.jpg" alt="" />
+                </div>
+                <div class="content">
+                  <h4>Hayran Henrique Ferreira De Souza</h4>
+                  <p>MP de Execução & Serviços</p>
+                  <a href="lider-perfil.html"
+                    ><button class="lid-btn">
+                      Saiba mais <i class="fas fa-arrow-right"></i></button
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="gestores-navigation">
+            <div class="gestores-prev">
+              <i class="fas fa-arrow-left"></i>
+            </div>
+            <div class="gestores-next">
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+</section>
+<script>
+    // Slider 2 Gestores
+    const swiperProfissionais = new Swiper("#sliderGestores2", {
+        navigation: {
+          nextEl: ".gestores-next",
+          prevEl: ".gestores-prev",
+        },
+        slidesPerView: 2,
+        spaceBetween: 10,
+        loop: true,
+        centeredSlides: true,
+        breakpoints: {
+          650: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+        },
+      });
+</script>
+</body>
+</html>
